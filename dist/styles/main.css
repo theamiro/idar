@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Barlow-Regular";
+  src: url("../fonts/Barlow-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Barlow-Regular", "Helvetica", sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Barlow-Regular", "Helvetica", sans-serif;
+}
+
+p {
+  font-family: "Barlow-Regular", "Helvetica", sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color: #121818;
+}
+
+section {
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}

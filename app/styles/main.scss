@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Barlow-Regular";
+  src: url("../fonts/Barlow-Regular.ttf") format("truetype");
+}
+
+$primary-font: "Barlow-Regular", "Helvetica", sans-serif;
+$primary: #121818;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: $primary-font;
+}
+h1 {
+    color: #fff;
+    font-family: $primary-font
+}
+p {
+    font-family: $primary-font;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary;
+}
+
+section {
+    height: 100vh;
+}
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    
+}
