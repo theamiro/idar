@@ -14,6 +14,10 @@ $primary: #121818;
     box-sizing: border-box;
 }
 
+.bg-secondary {
+    background-color: #f8f8f8;
+}
+
 html, body {
     font-family: $primary-font;
 }
@@ -23,6 +27,95 @@ h1 {
 }
 p {
     font-family: $primary-font;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+}
+.menu {
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    line-height: 1;
+    .menu-item {
+        width: 120px;
+        text-align: center;
+        display: block;
+        padding: 1em;
+        a {
+            width: 120px;
+            height: 3em;
+            font-size: 1.05em;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 1em;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            -webkit-transition: color 0.3s;
+            transition: color 0.3s;
+            text-transform: uppercase;
+        }
+    }
+    .menu-line {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 120px;
+        height: 2px;
+        pointer-events: none;
+        border: 1px solid #fff;
+        border-top-color: rgb(255, 255, 255);
+        border-top-style: solid;
+        border-top-width: 0px;
+        border-right-color: rgb(255, 255, 255);
+        border-right-style: solid;
+        border-right-width: 45px;
+        border-bottom-color: rgb(255, 255, 255);
+        border-bottom-style: solid;
+        border-bottom-width: 0px;
+        border-left-color: rgb(255, 255, 255);
+        border-left-style: solid;
+        border-left-width: 45px;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+        border-width: 0 45px;
+        border-top-width: 0px;
+        border-right-width: 45px;
+        border-bottom-width: 0px;
+        border-left-width: 45px;
+        background: #d94f5c;
+        background-image: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(217, 79, 92);
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        -webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1);
+        -webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+        transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+    }
+    .menu-item:nth-child(1).active ~ .menu-line {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 header {
@@ -34,8 +127,13 @@ header {
 section {
     height: 100vh;
 }
-.navbar {
-    display:flex;
+
+.d-flex {
+    display: flex;
+}
+.justify-between {
     justify-content: space-between;
-    
+}
+.align-items-center {
+    align-items: center;
 }
